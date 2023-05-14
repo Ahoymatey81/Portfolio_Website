@@ -1,0 +1,139 @@
+/* GLOBAL VARIABLES */
+:root {
+    --primary_color: #BA7464;
+    --secondary_color: #64AABA;
+    --btn_color: #7FBA64;
+    --link_color: #9F64BA;
+    --dark_color: #000;
+    --light_color: #fff;
+    --primary_margin: 10px;
+    --primary_padding: 10px;
+    --primary_font: 'Roboto', sans-serif;
+    --secondary_font: 'Ruda', sans-serif;
+    --text_font: 'Palanquin', sans-serif;
+    --large_size: 2.8em;
+    --medium_size: 2em;
+    --small_size: 1.8em;
+    --standard_size: 1em;
+
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* DEFINE ELEMENTS STYLING */
+body {
+    font-family: var(--text_font);
+    font-size: var(--standard_size);
+    line-height: calc(var(--standard_size) * 1.5);
+}
+h1 {
+    font-family: var(--primary_font);
+    color: var(--light_color);
+    font-size: var(--large_size);
+}
+h2 {
+    font-family: var(--primary_font);
+    color: var(--dark_color);
+    font-size: var(--medium_size);
+    margin: calc(var(--primary_margin) * 2) 0;
+    line-height: calc(var(--medium_size) * .8);
+}
+h3 {
+    font-family: var(--secondary_font);
+    color: var(--dark_color);
+    font-size: var(--small_size);
+    margin: calc(var(--primary_margin) * 2) 0;
+}
+p {
+    font-size: var(--standard_size);
+}
+
+/* HOMEPAGE */
+
+header .navBar {
+    background-color: var(--dark_color);
+    width: 100%;
+    color: var(--light_color);
+    position: fixed;
+    height: 8vh;
+}
+.container {
+    width: 370px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+nav {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+.navLogo {
+    display: flex;
+}
+.navLogo h2 {
+    color: var(--light_color);
+    font-size: var(--standard_size);
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style-type: none;
+    align-items: flex-end;
+}
+.hero_one {
+    padding-top: 8vh;
+    background-image: url('../images/Hero/irvan-smith-5eBW5GomfhY-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.hero_one div h1 {
+    line-height: calc(var(--large_size) * 0.8);
+}
+.hero_one div p {
+    color: var(--light_color);
+}
+.secTwo {
+    display: flex;
+    flex-direction: column;
+}
+.secTwo #space {
+    padding: calc(var(--primary_padding) * 2) 0;
+}
+.secTwo h2 {
+    text-align: center;
+}
+.secTwo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+}
+/* RESPONSIVE */
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* MEDIA QUERIES */
+
+@media (min-width: 668px) {
+    .container {
+        width: 649px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 749px;
+    }
+}
+@media (min-width: 1020px) {
+    .container {
+        width: 940px;
+    }
+}
