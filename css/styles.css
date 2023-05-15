@@ -396,7 +396,9 @@ img {
     .container {
         width: 749px;
     }
-    
+    .footNav ul {
+        display: block;
+    }
 }
 @media (min-width: 1020px) {
     .container {
