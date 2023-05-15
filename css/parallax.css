@@ -1,0 +1,105 @@
+
+.parallax {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: black;
+    color: #fff;
+    margin: auto;
+    padding-top: 8vh;
+}
+.parallax img {
+    max-width: 100%;
+    height: auto;
+}
+.parallax header.hero {
+    background-image: url("/images/parallax/Scarypicture.png");
+    background-position: bottom;
+    background-size: cover;
+    min-height: 130vh;
+    position: relative;
+}
+.parallax .hero h1 {
+    color: red;
+    text-shadow: 10px 10px 15px rgba(0, 0, 0, .8);
+    text-align: left;
+    font-size: clamp(4rem, 10vw, 6rem);
+    font-weight: 900;
+    line-height: 1;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 100%;
+    position: fixed;
+
+}
+.parallax .hero .headerMask {
+    position: absolute;
+    inset: 0;
+    mask: url(/images/parallax/inversepicture.png);
+    mask-position: bottom;
+    mask-size: cover;
+    -webkit-mask: url(/images/parallax/inversepicture.png);
+    -webkit-mask-position: bottom;
+    -webkit-mask-size: cover;
+}
+
+.parallax .container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+.parallax h2 {
+    font-size: 40px;
+    margin: 20px 0 20px 0;
+}
+.parallax .container2 {
+    display: flex;
+    gap: 10px;
+}
+.parallax .card {
+    background-color: gray;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.parallax h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    padding: 10px;
+}
+.parallax h4 {
+    text-align: center;
+    color: black;
+    font-size: larger;
+    padding: 10px;
+}
+.parallax footer {
+    background-color: gray;
+    margin-top: 2rem;
+    min-height: 100px;
+    width: 100%;
+}
+.parallax footer p {
+    color: black;
+    margin: 10px;
+    padding-top: 20px;
+}
+.parallax footer p a:link {
+    text-decoration: none;
+    color: purple;
+}
+.parallax .ghost {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateX(-100%);
+}
+.parallax .bat {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    transform: translateX(-100%);
+}
+#zero {
+    margin-top: 0;
+}
