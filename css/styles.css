@@ -50,15 +50,25 @@ h3 {
 p {
     font-size: var(--standard_size);
 }
+a {
+    color: var(--link_color);
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: var(--link_color);
+}
 
 /* HOMEPAGE */
+/*******************************************************************************/
 
+/* NAVIGATION */
 header .navBar {
     background-color: var(--dark_color);
     width: 100%;
     color: var(--light_color);
     position: fixed;
     height: 8vh;
+    z-index: 2;
 }
 .container {
     width: 370px;
@@ -85,6 +95,8 @@ nav ul li {
     list-style-type: none;
     align-items: flex-end;
 }
+/* HERO */
+
 .hero_one {
     padding-top: 8vh;
     background-image: url('../images/Hero/irvan-smith-5eBW5GomfhY-unsplash.jpg');
@@ -98,12 +110,23 @@ nav ul li {
 .hero_one div p {
     color: var(--light_color);
 }
+/* MAIN */
+
+.secOne h2 {
+    text-align: center;
+}
 .secTwo {
     display: flex;
     flex-direction: column;
 }
 .secTwo #space {
     padding: calc(var(--primary_padding) * 2) 0;
+}
+.secTwo #space div h3 {
+    text-align: center;
+}
+.secTwo #space div p {
+    text-align: center;
 }
 .secTwo h2 {
     text-align: center;
@@ -115,6 +138,154 @@ nav ul li {
     width: 80%;
     height: 80%;
 }
+.colorBlock {
+    background-color: var(--primary_color);
+}
+.secThree h2 {
+    color: var(--light_color);
+    text-align: center;
+}
+/* ACCORDION */
+
+.aContainer {
+    padding-bottom: calc(var(--primary_padding) * 3);
+}
+.accordion {
+    position: relative;
+    background-color: var(--light_color);
+    z-index: 1;
+}
+.accordion::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1em;
+    content: "";
+}
+.accordion:first-child {
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}
+.accordion:last-child {
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+}
+.accordion:first-child::before {
+    border-top-left-radius: 1.5em; 
+}
+.accordion:last-child::before {
+    border-bottom-left-radius: 1.5em; 
+}
+.aHeader h3 {
+    background-color: var(--secondary_color);
+    font-size: 1.5em;
+    margin: 0;
+}
+.aHeader button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 1rem);
+    margin-left: 1rem;
+    padding: 1.5rem 2rem;
+    border: 0;
+    text-align: left;
+    font-size: 1.5rem;
+    background-color: var(--secondary_color);
+
+}
+.fa-arrow-down, .fa-arrow-up {
+    width: 1rem;
+    font-size: 1.5rem;
+}
+.fa-arrow-down {
+    display: block;
+}
+.fa-arrow-up {
+    display: none;
+}
+.accordion.isOpen .fa-arrow-up {
+    display: block;
+}
+.accordion.isOpen .fa-arrow-down {
+    display: none;
+}
+.aContent {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-out;
+}
+
+.aInner {
+    padding: 1.5em 3em;
+}
+.aInner p {
+    padding-top: .5em;
+}
+
+.aContent img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+}
+/* End Accordion */
+
+.secFour h2 {
+    text-align: center;
+}
+.secFour img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+}
+.secFour p {
+    padding-top: var(--primary_padding);
+}
+.secFive {
+    display: flex;
+    flex-direction: column;
+}
+.secFive h2 {
+    text-align: center;
+}
+.secFive button {
+    align-self: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    background-color: var(--btn_color);
+    margin-bottom: calc(var(--primary_margin) * 3);
+    color: var(--light_color);
+    padding: var(--primary_padding);
+    
+
+}
+/* FOOTER */
+
+footer {
+    background-color: var(--dark_color);
+    height: 10vh;
+}
+#split {
+    display: flex;
+}
+.artist {
+    color: var(--light_color);
+    padding-top: var(--primary_padding);
+}
+.footNav ul {
+    display: none;
+}
+.footNav ul li {
+    color: var(--light_color);
+    list-style-type: none;
+}
+
 /* RESPONSIVE */
 img {
     max-width: 100%;

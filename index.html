@@ -24,15 +24,14 @@
     <header>
         <div class="navBar">
             <div class="container">
-                <nav>
-                    <div class="navLogo">
-                        <img src="images/bird_parrot_icon.svg" width="40" height="50" alt="parrot logo">
-                        <h2>Ahoy Web Design and Development</h2>
-                    </div>
-                    <ul>
-                        <li>HOMEPAGE</li>
-                        <li><a href=""></a> CUSTOM WEBSITE</li>
-                        <li><a href=""></a> PORTFOLIO</li>
+                <nav class="header">
+                    <a href="" class="logo"><img src="images/bird_parrot_icon.svg" width="40" height="50" alt="parrot logo">Ahoy Web Design and Development</a>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                      <li><a href="#work">HOMEPAGE</a></li>
+                      <li><a href="#about">CUSTOM WEBSITE</a></li>
+                      <li><a href="#careers">PORTFOLIO</a></li>
                     </ul>
                 </nav>
             </div>
@@ -183,8 +182,20 @@
         </div>
     </main>
     <footer>
-
+        <div class="container" id="split">
+            <div class="artist">
+                <p>Hero Photo by <a href="https://unsplash.com/@lucabravo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luca Bravo</a> on <a href="https://unsplash.com/photos/XJXWbfSo2f0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </p>
+            </div>
+            <div class="footNav">
+                <ul>
+                    <li>HOMEPAGE</li>
+                    <li><a href=""></a> CUSTOM WEBSITE</li>
+                    <li><a href=""></a> PORTFOLIO</li>
+                </ul>
+            </div>
+        </div>
     </footer>
-    <script src="scrips/script.js"></script>
+    <script src="scripts/accordion.js"></script>
 </body>
 </html>
