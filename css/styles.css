@@ -67,7 +67,7 @@ header .navBar {
     width: 100%;
     color: var(--light_color);
     position: fixed;
-    height: 10vh;
+    height: 8vh;
     z-index: 2;
 }
 .container {
@@ -88,9 +88,12 @@ header .navBar {
   
 .header li a {
     display: block;
-    padding: calc(var(--primary_padding) * 3);
+    padding: 20px 20px;
     border-right: 1px solid var(--secondary_color);
     text-decoration: none;
+}
+.header li a:first-of-type {
+    border-left: 1px solid var(--secondary_color);
 }
   
 .header li a:hover, .header .menu-btn:hover {
@@ -101,9 +104,17 @@ header .navBar {
     display: block;
     float: left;
     font-size: var(--standard_size);
-    text-decoration: none;
+    text-decoration: none; 
+}
+.header .logo:nth-of-type(1) {
     position: absolute;
     bottom: 0;
+    margin-bottom: -5px;
+}
+.header .logo:nth-of-type(2) {
+    position: absolute;
+    bottom: 5px;
+    margin-left: 50px;
 }
   
 /* menu */
@@ -160,6 +171,7 @@ header .navBar {
   
 .header .menu-btn:checked ~ .menu {
     max-height: 240px;
+    z-index: 3;
 }
   
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -180,7 +192,7 @@ header .navBar {
 /* HERO */
 
 .hero_one {
-    padding-top: 10vh;
+    padding-top: 8vh;
     background-image: url('../images/Hero/irvan-smith-5eBW5GomfhY-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -384,23 +396,24 @@ img {
     .container {
         width: 749px;
     }
-    .header li {
-        float: left;
-      }
-      .header li a {
-        padding: 20px 30px;
-      }
-      .header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-      }
-      .header .menu-icon {
-        display: none;
-      }
+    
 }
 @media (min-width: 1020px) {
     .container {
         width: 940px;
     }
-}
+   .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+} 
