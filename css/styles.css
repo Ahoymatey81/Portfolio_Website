@@ -1,13 +1,13 @@
 /* GLOBAL VARIABLES */
 :root {
+    /* colors */
     --primary_color: #BA7464;
     --secondary_color: #64AABA;
     --btn_color: #7FBA64;
     --link_color: #9F64BA;
     --dark_color: #000;
     --light_color: #fff;
-    --primary_margin: 10px;
-    --primary_padding: 10px;
+    /* fonts */
     --primary_font: 'Roboto', sans-serif;
     --secondary_font: 'Ruda', sans-serif;
     --text_font: 'Palanquin', sans-serif;
@@ -15,6 +15,13 @@
     --medium_size: 2em;
     --small_size: 1.8em;
     --standard_size: 1em;
+    /* helpers */
+    --primary_margin: 10px;
+    --primary_padding: 10px;
+    --spacer: 1rem;
+    --spacer-dbl: calc(var(--spacer) * 2);
+    --border-radius: 12px;
+    --shadow: 0 0 8px rgba(0,0,0,.4);
 
 }
 /* RESET */
@@ -35,6 +42,7 @@ h1 {
     font-size: var(--large_size);
 }
 h2 {
+    text-align: center;
     font-family: var(--primary_font);
     color: var(--dark_color);
     font-size: var(--medium_size);
@@ -194,7 +202,6 @@ header .navBar {
 .hero_one {
     padding-top: 8vh;
     background-image: url('../images/Hero/irvan-smith-5eBW5GomfhY-unsplash.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
 }
@@ -375,12 +382,81 @@ footer {
     color: var(--light_color);
     padding-top: var(--primary_padding);
 }
+.artist p:last-of-type {
+    margin-top: 30px;
+}
 .footNav ul {
     display: none;
 }
 .footNav ul li {
     color: var(--light_color);
     list-style-type: none;
+}
+/* PORTFOLIO PAGE */
+/************************************************************************************/
+.hero_three {
+    padding-top: 8vh;
+    background-image: url('../images/Hero/vipul-jha-a4X1cdC1QAc-unsplash.jpg');
+    background-size: cover;
+    height: 50vh;
+}
+.hero_three h1 {
+    position: absolute;
+    top: 180px;
+}
+.cards h2 {
+    text-align: center;
+}
+section.cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer);
+    width: 80%;
+    margin: var(--spacer-dbl) auto;
+}
+section.cards article figure img {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.cards article {
+    margin: auto;
+    background-color: var(--secondary_color);
+    border: solid 1px var(--dark_color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 400px;
+    min-height: 500px;
+}
+.cards h3 {
+    text-align: center;
+    margin-top: 10px;
+    padding: calc(var(--spacer) / 4);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.cards p {
+    text-align: center;
+    margin-bottom: var(--primary_margin);
+    padding: var(--primary_padding);
+}
+.cards figcaption  {
+    text-align: end;
+    font-size: .8rem;
+    font-style: italic;
+    padding: 0 5px 6px 0;
+}
+.center {
+    display: flex;
+}
+.cards article button {
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    background-color: var(--btn_color);
+    margin: auto;
+    padding: var(--primary_padding);
+    margin-bottom: var(--primary_margin);
+}
+.cards article button a {
+    color: var(--light_color);
 }
 
 /* RESPONSIVE */
