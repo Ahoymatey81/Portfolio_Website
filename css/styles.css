@@ -67,7 +67,7 @@ header .navBar {
     width: 100%;
     color: var(--light_color);
     position: fixed;
-    height: 8vh;
+    height: 10vh;
     z-index: 2;
 }
 .container {
@@ -75,30 +75,112 @@ header .navBar {
     margin: 0 auto;
     padding: 0 10px;
 }
-nav {
-    width: 100%;
-    display: flex;
+.header a {
+    color: var(--light_color);
+}  
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: var(--dark_color);
+}
+  
+.header li a {
+    display: block;
+    padding: calc(var(--primary_padding) * 3);
+    border-right: 1px solid var(--secondary_color);
+    text-decoration: none;
+}
+  
+.header li a:hover, .header .menu-btn:hover {
+    background-color: var(--secondary_color);
+}
+  
+.header .logo {
+    display: block;
+    float: left;
+    font-size: var(--standard_size);
+    text-decoration: none;
     position: absolute;
     bottom: 0;
 }
-.navLogo {
-    display: flex;
+  
+/* menu */
+  
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
 }
-.navLogo h2 {
-    color: var(--light_color);
-    font-size: var(--standard_size);
+  
+/* menu icon */
+  
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
 }
-nav ul {
-    display: flex;
+  
+.header .menu-icon .navicon {
+    background: var(--light_color);
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
 }
-nav ul li {
-    list-style-type: none;
-    align-items: flex-end;
+  
+.header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
+    background: var(--light_color);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+  
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+  
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+  
+/* menu btn */
+  
+.header .menu-btn {
+    display: none;
+}
+  
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+  
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
 }
 /* HERO */
 
 .hero_one {
-    padding-top: 8vh;
+    padding-top: 10vh;
     background-image: url('../images/Hero/irvan-smith-5eBW5GomfhY-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -302,6 +384,20 @@ img {
     .container {
         width: 749px;
     }
+    .header li {
+        float: left;
+      }
+      .header li a {
+        padding: 20px 30px;
+      }
+      .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+      }
+      .header .menu-icon {
+        display: none;
+      }
 }
 @media (min-width: 1020px) {
     .container {
