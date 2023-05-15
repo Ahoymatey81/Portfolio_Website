@@ -354,19 +354,22 @@ header .navBar {
     font-size: 1.5rem;
     background-color: var(--btn_color);
     margin-bottom: calc(var(--primary_margin) * 3);
-    color: var(--light_color);
     padding: var(--primary_padding);
-    
-
+}
+.secFive button a {
+    color: var(--light_color);
 }
 /* FOOTER */
 
 footer {
     background-color: var(--dark_color);
-    height: 10vh;
+    height: fit-content;
+    margin-top: var(--primary_margin);
+    padding: var(--primary_padding) 0;
 }
 #split {
     display: flex;
+    justify-content: space-between;
 }
 .artist {
     color: var(--light_color);
@@ -397,7 +400,7 @@ img {
         width: 749px;
     }
     .footNav ul {
-        display: block;
+        display: block; 
     }
 }
 @media (min-width: 1020px) {
