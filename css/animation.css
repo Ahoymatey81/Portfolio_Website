@@ -1,0 +1,91 @@
+.animation {
+    position: relative;
+}
+.animation figure {
+    position: absolute;
+}
+  
+.aOne {
+    animation-name: fadeOne;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: normal;
+}
+.aTwo {
+    animation-name: fadeTwo;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: normal;
+}
+.aThree {
+    animation-name: fadeThree;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: normal;
+}
+.aFour {
+    animation-name: fadeFour;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: normal;
+}
+@keyframes fadeOne {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+}
+@keyframes fadeTwo {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+}
+@keyframes fadeThree {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+}
+@keyframes fadeFour {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+}

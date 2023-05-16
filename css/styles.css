@@ -502,7 +502,7 @@ section.cards article figure img {
     margin-top: calc(var(--primary_margin) * 4);
 }
 .example article:nth-of-type(2) {
-    min-height: 350px;
+    min-height: 550px;
 }
 .example article h3 {
     text-align: center;
@@ -510,6 +510,22 @@ section.cards article figure img {
 .example p {
     padding: var(--primary_padding);
 }
+
+.animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.animation figcaption {
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+}
+.example article:nth-of-type(3) {
+    min-height: 550px;
+}
+
 
 /* FORM PAGE */
 /************************************************************************************/
