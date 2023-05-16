@@ -559,6 +559,14 @@ img {
     .container {
         width: 649px;
     }
+    .secFour #aUs {
+        display: flex;
+    }
+    #aUs figure {
+        min-width: 300px;
+        min-height: fit-content;
+        margin: auto;
+    }
 }
 @media (min-width: 768px) {
     .container {
@@ -630,6 +638,11 @@ img {
     }
     .secTwo #space:nth-of-type(2), .secTwo #space:nth-of-type(4), .secTwo #space:nth-of-type(6) {
         padding-left: var(--primary_padding);
+    }
+}
+@media (min-width: 820px) {
+    .container {
+        width: 790px;
     }
 }
 @media (min-width: 1020px) {
