@@ -332,6 +332,11 @@ header .navBar {
     width: 80%;
     height: 80%;
 }
+.aContent figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: .8em;
+}
 /* End Accordion */
 
 .secFour h2 {
@@ -341,8 +346,13 @@ header .navBar {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
+}
+.secFour figcaption {
+    font-size: .8em;
+    font-style: italic;
+    text-align: center;
 }
 .secFour p {
     padding-top: var(--primary_padding);
@@ -491,10 +501,29 @@ section.cards article figure img {
     border-radius: var(--border-radius);
     margin-top: calc(var(--primary_margin) * 4);
 }
+.example article:nth-of-type(2) {
+    min-height: 350px;
+}
 .example article h3 {
     text-align: center;
 }
+.example p {
+    padding: var(--primary_padding);
+}
 
+/* FORM PAGE */
+/************************************************************************************/
+
+.form {
+    padding-top: 8vh;
+}
+.form h1 {
+    color: var(--dark_color);
+    text-align: center;
+    padding: var(--primary_padding);
+    margin: var(--primary_margin);
+    line-height: var(--large_size);
+}
 /* RESPONSIVE */
 img {
     max-width: 100%;
