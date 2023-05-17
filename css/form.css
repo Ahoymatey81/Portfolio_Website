@@ -1,0 +1,92 @@
+:root {
+    /* colors */
+    --primary_color: #BA7464;
+    --secondary_color: #64AABA;
+    --btn_color: #7FBA64;
+    --link_color: #9F64BA;
+    --dark_color: #000;
+    --light_color: #fff;
+    /* fonts */
+    --primary_font: 'Roboto', sans-serif;
+    --secondary_font: 'Ruda', sans-serif;
+    --text_font: 'Palanquin', sans-serif;
+    --large_size: 2.8em;
+    --medium_size: 2em;
+    --small_size: 1.8em;
+    --standard_size: 1em;
+    /* helpers */
+    --primary_margin: 10px;
+    --primary_padding: 10px;
+    --spacer: 1rem;
+    --spacer-dbl: calc(var(--spacer) * 2);
+    --border-radius: 12px;
+    --shadow: 0 0 8px rgba(0,0,0,.4);
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+#contact fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 5px var(--primary_color);
+    border-radius: var(--border-radius);
+    background-color: var(--secondary_color);
+    max-width: 450px;
+    align-self: center;
+}
+#contact fieldset .labelZ label {
+    text-align: center;
+}
+#contact fieldset .labelX label {
+    text-align: right;
+}
+#contact label {
+    display: block;
+    margin-top: 1em;
+}
+#contact input, #contact textarea {
+    padding: .5em;
+    border-radius: 4px;
+}
+.form fieldset input:required {
+    border: 1px solid red;
+}
+.form fieldset input:valid {
+    border: 1px solid yellow;
+}
+#contact select {
+    min-width: 12em;
+}
+#contact textarea {
+    font-family: var(--text_font);
+    min-height: 8em;
+    min-width: 100%;
+}
+#contact input[type="email"], #contact input[type="text"], #contact input[type="tel"] {
+    width: 15em;
+}
+label i {
+    margin-right: .25em;
+}
+.fa-meteor {
+    margin-left: .25em;
+}
+#contact input[type="submit"] {
+    padding: .5em 1em;
+    border-radius: var(--border-radius);
+    background-color: var(--btn_color);
+    color: #fff;
+    border: none;
+    font-size: var(--small_size);
+    margin: 1em;
+    max-width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+input:focus, textarea:focus, select:focus {
+    outline: solid 1px var(--link_color);
+    border: solid 1px var(--link_color);
+    box-shadow: 0 0 3px var(--link_color);
+}

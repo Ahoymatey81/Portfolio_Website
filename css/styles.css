@@ -538,8 +538,8 @@ section.cards article figure img {
 /* FORM PAGE */
 /************************************************************************************/
 
-.form {
-    padding-top: 8vh;
+.formX p {
+    text-align: center;
 }
 .form h1 {
     color: var(--dark_color);

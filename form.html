@@ -14,6 +14,7 @@
     
     <!-- custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css">
     <title>Schedule Consultation</title>
 </head>
 <body>
@@ -38,9 +39,60 @@
     </header>
     <main>
         <div class="container">
-            <section class="form">
-                <h1>Schedule a Consultation</h1>
+            <section class="formX heroX">
+                <h2>Schedule a Consultation</h2>
+                <p>Please fill out the form below and we will contact you about scheduling a free consultation.</p>
             </section>
+            <div class="form" id="form">
+                <form action="#" method="post" id="contact">
+                    <fieldset>
+
+                        <div class="labelX">
+                            <label for="firstname">
+                                <i class="fa-solid fa-user"></i>First Name: 
+                                <input type="text" name="firstname" id="firstname" required><i class="fa-solid fa-meteor"></i>
+                            </label>
+                            
+
+                            <label for="lastname">
+                                <i class="fa-solid fa-user"></i>Last Name: 
+                                <input type="text" name="lastname" id="lastname" required><i class="fa-solid fa-meteor"></i>
+                            </label>
+                            
+                            
+                            <label for="phone">
+                                <i class="fa-solid fa-phone"></i>Phone Number: 
+                                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890" required><i class="fa-solid fa-meteor"></i>
+                            </label>
+                            
+                            
+                            <label for="email">
+                                <i class="fa-solid fa-envelope"></i>Email: 
+                                <input type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Must be word@something.com"><i class="fa-solid fa-meteor"></i>
+                            </label>
+                            
+                        </div>
+                        
+                        <div class="labelZ">
+                            <label for="hearaboutus">How did you hear about us?<br>
+                                <select name="hearaboutus" id="hearaboutus" multiple size="4">
+                                    <option value="friend">From a Friend</option>
+                                    <option value="business">Another Business</option>
+                                    <option value="visit">Visited a Site We Made</option>
+                                    <option value="internet">Internet Search</option>
+                                </select>
+                            </label><br>
+                            
+                           <label for="comments">Project Information and Questions:<br>
+                                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                            </label><br>
+                        </div>
+
+                       <p>Fields marked with an asterisk (<i class="fa-solid fa-meteor"></i>) are required.</p>
+                    </fieldset>
+                    <input type="submit" id="submit" value="Submit Contact Form">
+                </form>
+            </div>
         </div>
     </main>
 
@@ -50,9 +102,6 @@
                 <p></p>
                 <p>&COPY; Ahoy Web Design and Development 2023</p>
             </div>
-            <main>
-                
-            </main>
             <div class="footNav">
                 <ul>
                     <li><a href="./index.html">HOMEPAGE</a></li>
