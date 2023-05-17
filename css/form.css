@@ -42,6 +42,9 @@ form {
 #contact fieldset .labelX label {
     text-align: right;
 }
+#contact fieldset p {
+    text-align: center;
+}
 #contact label {
     display: block;
     margin-top: 1em;
@@ -89,4 +92,49 @@ input:focus, textarea:focus, select:focus {
     outline: solid 1px var(--link_color);
     border: solid 1px var(--link_color);
     box-shadow: 0 0 3px var(--link_color);
+}
+#pwdWrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.tooltip {
+    position: absolute;
+    right: 18px;
+    top: -20px;
+    font-size: 1em;
+    color: var(--primary_color);
+}
+
+.show {
+    display: block;
+    background-color: var(--dark_color);
+    color: #fff;
+    padding: 5px 8px;
+    font-size: .8em;
+    border: solid 1px #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: -95px;
+    right: -38px;
+    width: 100px;
+    font-family: sans-serif;
+}
+.close {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    color: var(--dark_color);
+    font-size: 1rem;
+}
+.fa-caret-down {
+    position: absolute;
+    bottom: -10px;
+    left: 48%;
+    font-size: 1.5em;
+    color: var(--dark_color);
+}
+
+.hide {
+    display: none;
 }

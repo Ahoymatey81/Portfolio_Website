@@ -83,12 +83,20 @@
                                 </select>
                             </label><br>
                             
-                           <label for="comments">Project Information and Questions:<br>
+                            <label for="comments">Project Information and Questions:<br></label>
+                            <div id="pwdWrap">
+                                <i class="fa-solid fa-circle-question tooltip">
+                                    <span class="helperText" id="tt">Tell us about your business and what your expectations are.
+                                        <i class="fa-solid fa-caret-down"></i>
+                                        <i class="fa-solid fa-circle-xmark close"></i>
+                                    </span>
+                                </i>
                                 <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-                            </label><br>
+                            </div>
+                           
                         </div>
 
-                       <p>Fields marked with an asterisk (<i class="fa-solid fa-meteor"></i>) are required.</p>
+                       <br><p>Fields marked with an asterisk (<i class="fa-solid fa-meteor"></i>) are required.</p>
                     </fieldset>
                     <input type="submit" id="submit" value="Submit Contact Form">
                 </form>
@@ -112,5 +120,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/form.js"></script>
 </body>
 </html>
