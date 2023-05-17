@@ -518,12 +518,15 @@ section.cards article figure img {
 .example p {
     padding: var(--primary_padding);
 }
-
 .animation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 150px;
+    position: relative;
+    height: 10px;
+    top: 50%;
+}
+.animation .helperY {
+    position: relative;
+    height: 10px;
+    top: 30px;
 }
 .animation figcaption {
     font-size: 1rem;
@@ -567,6 +570,10 @@ img {
         min-height: fit-content;
         margin: auto;
     }
+    .animation .helperY figure img {
+        height: 80%;
+        width: 80%;
+    }
 }
 @media (min-width: 768px) {
     .container {
@@ -593,6 +600,10 @@ img {
         position: relative;
         height: 150px;
         top: 100px;
+    }
+    .animation .helperY {
+        top: 30px;
+        right: -170px;
     }
 
 }
