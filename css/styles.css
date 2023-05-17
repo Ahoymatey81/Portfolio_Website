@@ -584,6 +584,17 @@ img {
     #spaceX h3 {
         margin-top: 20px;
     }
+    .slideshow {
+        position: relative;
+        height: 150px;
+        top: 50%;
+    }
+    .slideshow .helper {
+        position: relative;
+        height: 150px;
+        top: 100px;
+    }
+
 }
 @media (min-width: 800px) {
     header .navBar {
