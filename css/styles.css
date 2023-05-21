@@ -518,6 +518,9 @@ section.cards article figure img {
 .example p {
     padding: var(--primary_padding);
 }
+.example article:nth-of-type(1) p, .example article:nth-of-type(4) p {
+    margin-bottom: 40px;
+}
 .animation {
     position: relative;
     height: 10px;
@@ -555,6 +558,9 @@ section.cards article figure img {
 img {
     max-width: 100%;
     height: auto;
+}
+.heroX {
+    padding-top: 7.5vh;
 }
 /* MEDIA QUERIES */
 /*************************************************************************************/
