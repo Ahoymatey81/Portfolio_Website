@@ -219,7 +219,7 @@ header .navBar {
     display: flex;
     flex-direction: column;
 }
-.secTwo #space {
+.secTwo .space {
     padding: calc(var(--primary_padding) * 2) 0;
 }
 .secTwo .design {
@@ -231,17 +231,17 @@ header .navBar {
     display: block;
     margin: auto;
 }
-.secTwo .design #spaceX {
+.secTwo .design .spaceX {
     padding-left: var(--primary_padding);
 }
 #spaceX h3 {
     line-height: 2rem;
     margin-top: 0;
 }
-.secTwo #space div h3 {
+.secTwo .space div h3 {
     text-align: center;
 }
-.secTwo #space div p {
+.secTwo .space div p {
     text-align: center;
 }
 .secTwo h2 {
@@ -372,7 +372,7 @@ header .navBar {
 .secFive h2 {
     text-align: center;
 }
-.secFive button {
+.secFive a {
     align-self: center;
     border: 1px solid black;
     border-radius: 15px;
@@ -380,8 +380,6 @@ header .navBar {
     background-color: var(--btn_color);
     margin-bottom: calc(var(--primary_margin) * 3);
     padding: var(--primary_padding);
-}
-.secFive button a {
     color: var(--light_color);
 }
 /* FOOTER */
@@ -464,7 +462,7 @@ section.cards article figure img {
 .center {
     display: flex;
 }
-.cards article button {
+.cards article .center a {
     border: 1px solid black;
     border-radius: 15px;
     font-size: 1.5rem;
@@ -472,10 +470,9 @@ section.cards article figure img {
     margin: auto;
     padding: var(--primary_padding);
     margin-bottom: var(--primary_margin);
-}
-.cards article button a {
     color: var(--light_color);
 }
+
 /* CUSTOM PAGE */
 /************************************************************************************/
 
@@ -591,10 +588,10 @@ img {
     header .navBar {
         height: 6.3vh;
     }
-    #spaceX {
+    .spaceX {
         margin-top: 40px;
     }
-    #spaceX h3 {
+    .spaceX h3 {
         margin-top: 20px;
     }
     .slideshow {
@@ -664,7 +661,7 @@ img {
         height: 50%;
         width: 50%;
     }
-    .secTwo #space:nth-of-type(2), .secTwo #space:nth-of-type(4), .secTwo #space:nth-of-type(6) {
+    .secTwo .space:nth-of-type(2), .secTwo .space:nth-of-type(4), .secTwo .space:nth-of-type(6) {
         padding-left: var(--primary_padding);
     }
 }
